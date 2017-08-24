@@ -1,0 +1,4 @@
+2017-08-23 16:41:07.441  INFO 6716 --- [main] c.mkyong.prop.SpringBootPropApplication  : Starting SpringBootPropApplication on engineer-PC with PID 6716 (C:\workspace\tutorial\spring-boot\mkyong\spring-boot-prop\target\classes started by engineer in C:\workspace\tutorial\spring-boot\mkyong\spring-boot-prop)
+2017-08-23 16:41:07.446 DEBUG 6716 --- [main] c.mkyong.prop.SpringBootPropApplication  : Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-08-23 16:41:07.446  INFO 6716 --- [main] c.mkyong.prop.SpringBootPropApplication  : The following profiles are active: dev
+2017-08-23 16:41:08.316  INFO 6716 --- [main] c.mkyong.prop.SpringBootPropApplication  : Started SpringBootPropApplication in 1.284 seconds (JVM running for 2.011)

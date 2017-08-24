@@ -1,0 +1,11 @@
+2017-08-23 16:27:21 [main] INFO  c.m.prop.SpringBootPropApplication - Starting SpringBootPropApplication on engineer-PC with PID 1516 (C:\workspace\tutorial\spring-boot\mkyong\spring-boot-prop\target\classes started by engineer in C:\workspace\tutorial\spring-boot\mkyong\spring-boot-prop)
+2017-08-23 16:27:21 [main] DEBUG c.m.prop.SpringBootPropApplication - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-08-23 16:27:21 [main] INFO  c.m.prop.SpringBootPropApplication - No active profile set, falling back to default profiles: default
+2017-08-23 16:27:21 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2ed0fbae: startup date [Wed Aug 23 16:27:21 ICT 2017]; root of context hierarchy
+2017-08-23 16:27:22 [main] WARN  o.s.b.c.p.ConfigurationPropertiesBindingPostProcessor - The @ConfigurationProperties bean class com.mkyong.prop.GlobalConfigProperties contains validation constraints but had not been annotated with @Validated.
+2017-08-23 16:27:22 [main] WARN  o.s.b.c.p.ConfigurationPropertiesBindingPostProcessor - The @ConfigurationProperties bean class com.mkyong.prop.GlobalConfigProperties contains validation constraints but had not been annotated with @Validated.
+2017-08-23 16:27:22 [main] WARN  o.s.b.c.p.ConfigurationPropertiesBindingPostProcessor - The @ConfigurationProperties bean class com.mkyong.prop.GlobalConfigProperties contains validation constraints but had not been annotated with @Validated.
+2017-08-23 16:27:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-08-23 16:27:22 [main] INFO  c.m.prop.SpringBootPropApplication - Started SpringBootPropApplication in 1.153 seconds (JVM running for 1.768)
+2017-08-23 16:27:22 [Thread-2] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2ed0fbae: startup date [Wed Aug 23 16:27:21 ICT 2017]; root of context hierarchy
+2017-08-23 16:27:22 [Thread-2] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

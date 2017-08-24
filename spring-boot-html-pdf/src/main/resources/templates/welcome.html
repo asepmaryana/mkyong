@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{|${baseUrl}/bootstrap.css|}" />
+</head>
+<body>
+    <p th:text="'Hello, ' + ${name} + ' !'" />
+    <table class="table table-striped table-bordered">
+    	<thead>
+    		<tr>
+	    		<th>ID</th>
+	    		<th>NAMA</th>
+	    		<th>KODE</th>
+	    	</tr>
+    	</thead>
+    	<tbody>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>ANDI</td>
+	    		<td>2A</td>
+	    	</tr>
+	    	<tr>
+	    		<td>2</td>
+	    		<td>HADI</td>
+	    		<td>3B</td>
+	    	</tr>
+    	</tbody>
+    </table>
+</body>
+</html>
