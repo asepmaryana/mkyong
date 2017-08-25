@@ -21,6 +21,7 @@ public class CourseController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getDocuments(Model model) {
+    	model.addAttribute("viewName", "courses");
         model.addAttribute("courses", documents);
         return "index";
 

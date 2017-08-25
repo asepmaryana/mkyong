@@ -1,26 +1,35 @@
 package com.memorynotfound.view;
 
-import com.memorynotfound.model.Course;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.springframework.web.servlet.view.document.AbstractXlsView;
-import org.apache.poi.ss.usermodel.Workbook;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.text.DateFormat;
-import java.util.List;
-import java.util.Map;
+
+import org.apache.poi.ss.usermodel.Workbook;
+import org.springframework.web.servlet.view.document.AbstractXlsView;
+
+import com.memorynotfound.exporter.CitiesXlsExporter;
+import com.memorynotfound.exporter.CourseXlsExporter;
 
 public class XlsView extends AbstractXlsView {
 
-    private static final DateFormat DATE_FORMAT = DateFormat.getDateInstance(DateFormat.SHORT);
+    //private static final DateFormat DATE_FORMAT = DateFormat.getDateInstance(DateFormat.SHORT);
 
     @Override
     protected void buildExcelDocument(Map<String, Object> model,
                                       Workbook workbook,
                                       HttpServletRequest request,
                                       HttpServletResponse response) throws Exception {
-
+    	
+    	String viewName = (String) model.get("viewName");
+    	System.out.println("viewName = "+viewName);
+    	
+    	if(viewName.equals("courses")) 
+    		CourseXlsExporter.export("courses.xls", model, workbook, response);
+    	else if(viewName.equals("cities")) 
+    		CitiesXlsExporter.export("cities.xls", model, workbook, response);
+    	
+    	/*
         // change the file name
         response.setHeader("Content-Disposition", "attachment; filename=\"my-xls-file.xls\"");
 
@@ -44,5 +53,6 @@ public class XlsView extends AbstractXlsView {
             courseRow.createCell(1).setCellValue(course.getName());
             courseRow.createCell(2).setCellValue(DATE_FORMAT.format(course.getDate()));
         }
+        */
     }
 }
